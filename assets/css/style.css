@@ -1,0 +1,69 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif !important;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  .current {
+
+    background-color: #72e08a ;
+  }
+  
+  .current > a {
+    
+    color: #ffffff !important;
+  }
+  /* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  background-color: #ffffff !important;
+}
+@media (min-width: 768px) {
+
+  nav {
+
+    background-color: transparent !important;
+  }
+  .navbar {
+    
+    height: 100px !important;
+
+  }
+}
+
+/* Home Page */
+.home-page {
+
+  min-height: 100vh;
+  background-image: url('../imgs/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.rating-system .rating-item:hover {
+
+  color: orange;
+  cursor: pointer;
+}
+
+.rating-system .rating-item:hover ~ .rating-item {
+
+  color: orange;
+}
+
+.rating-system .rating-item:has( > input[type=radio]:checked) {
+
+  color: orange;
+}
+
+.rating-system .rating-item:has( > input[type=radio]:checked) ~ .rating-item {
+
+  color: orange;
+}
